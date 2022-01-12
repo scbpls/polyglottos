@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
-const Home = () => {
+const Nav = () => {
   return (
     <>
       <nav>
+        <header>Polyglottos</header>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -13,10 +14,10 @@ const Home = () => {
             <Link to="/info">Info</Link>
           </li>
           <li>
-            <Link to="/Shop">Shop</Link>
+            <Link to="/shop">Shop</Link>
           </li>
           <li>
-            <Link to="/Contact">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
@@ -26,4 +27,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Nav;
