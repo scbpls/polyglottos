@@ -1,9 +1,11 @@
-import * as React from 'react';
+import React from 'react';
+import '../../index.css';
+import './index.css';
 
 const Home = () => {
   return (
     <>
-      <p>index</p>
+      <main id="home"></main>
     </>
   );
 };

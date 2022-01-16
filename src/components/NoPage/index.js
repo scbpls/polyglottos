@@ -1,9 +1,13 @@
-import * as React from 'react';
+import React from 'react';
+import '../../index.css';
+import './index.css';
 
 const NoPage = () => {
   return (
     <>
-      <p>Error 404</p>
+      <main id="no-page">
+        <h1>Page does not exist</h1>
+      </main>
     </>
   );
 };

@@ -5,7 +5,11 @@ import Home from './components/Home';
 import Info from './components/Info';
 import Shop from './components/Shop';
 import Contact from './components/Contact';
+import Login from './components/Login';
+import UserPanel from './components/UserPanel';
+import Register from './components/Register';
 import NoPage from './components/NoPage';
+import { users } from './utils/users';
 
 function App() {
   return (
@@ -16,6 +20,9 @@ function App() {
           <Route path="info" element={<Info />} />
           <Route path="shop" element={<Shop />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="login" element={<Login {...users} />} />
+          <Route path="user-panel" element={<UserPanel />} />
+          <Route path="register" element={<Register />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
