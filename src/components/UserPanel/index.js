@@ -13,6 +13,7 @@ const UserPanel = () => {
   function remove(event) {
     event.preventDefault();
     localStorage.removeItem('user');
+    alert('User has been removed');
     window.location.reload();
   }
 
