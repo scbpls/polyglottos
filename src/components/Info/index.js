@@ -23,6 +23,13 @@ const Info = () => {
               <li>travellers</li>
             </ul>
           </section>
+          <section className="s3">
+            <p>
+              Listen-and-repeat playlists – no time through a busy day? Repeat
+              while driving a car or sitting in a public transport. Our native
+              speakers will let you learn perfect pronunciation.
+            </p>
+          </section>
         </div>
       </main>
     </>

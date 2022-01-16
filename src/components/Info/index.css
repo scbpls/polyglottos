@@ -13,9 +13,20 @@
   margin-top: 4em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 8em;
-  grid-template-areas: 's1 s2';
+  grid-template-areas:
+    's1 s3'
+    's2 s3';
+}
+#info .s1 {
+  grid-area: s1;
+}
+#info .s2 {
+  grid-area: s2;
+}
+#info .s3 {
+  grid-area: s3;
 }
 #info section {
   margin-bottom: 6em;
@@ -47,8 +58,8 @@
   list-style: none;
 }
 #info .s1 li,
-#info .s2 li {
-  max-width: 20vw;
+#info .s2 li,
+#info .s3 p {
   margin: 0.5em 0.75em;
   padding: 0.5em 0.75em;
   color: var(--black);

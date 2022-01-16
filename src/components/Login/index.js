@@ -37,7 +37,7 @@ const Login = (users) => {
               <input
                 type="email"
                 name="email"
-                value={setUser.email}
+                value={user.email}
                 onChange={handleChange}
               />
             </label>
@@ -46,7 +46,7 @@ const Login = (users) => {
               <input
                 type="password"
                 name="password"
-                value={setUser.password}
+                value={user.password}
                 onChange={handleChange}
               />
             </label>

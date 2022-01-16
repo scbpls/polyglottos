@@ -14,7 +14,6 @@ const Register = () => {
     event.preventDefault();
     localStorage.setItem('user', JSON.stringify(user));
     alert('User has been regisered');
-    console.log(window.location.pathname);
     window.location.reload();
   }
 
@@ -36,7 +35,7 @@ const Register = () => {
               <input
                 type="firstName"
                 name="firstName"
-                value={setUser.firstName}
+                value={user.firstName}
                 onChange={handleChange}
               />
             </label>
@@ -45,7 +44,7 @@ const Register = () => {
               <input
                 type="lastName"
                 name="lastName"
-                value={setUser.lastName}
+                value={user.lastName}
                 onChange={handleChange}
               />
             </label>
@@ -54,7 +53,7 @@ const Register = () => {
               <input
                 type="email"
                 name="email"
-                value={setUser.email}
+                value={user.email}
                 onChange={handleChange}
               />
             </label>
@@ -63,7 +62,7 @@ const Register = () => {
               <input
                 type="password"
                 name="password"
-                value={setUser.password}
+                value={user.password}
                 onChange={handleChange}
               />
             </label>
