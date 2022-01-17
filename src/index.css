@@ -6,12 +6,9 @@
   --light-grey: #fefefe;
   --white: #ffffff;
   --blue: #003048;
+  --dark-blue: #c4ebff;
   --light-blue: #d8f2ff;
   --red: #d62828;
-  --green1: #52b68a;
-  --green2: #76c894;
-  --yellow1: #ffd000;
-  --yellow2: #ffdd00;
 }
 
 *,
@@ -21,6 +18,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.01em;
 }
 
 body {

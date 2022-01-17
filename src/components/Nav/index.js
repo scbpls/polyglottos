@@ -27,6 +27,13 @@ const Nav = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+          {data ? (
+            <li>
+              <Link to="/basket">
+                <ion-icon name="basket-outline"></ion-icon>
+              </Link>
+            </li>
+          ) : undefined}
           <li>
             {data ? (
               <Link to="/user-panel">

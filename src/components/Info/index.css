@@ -1,23 +1,31 @@
 #info {
+  overflow-x: hidden;
   width: 100%;
   height: 100vh;
+  background-image: url('./info-background.png');
+  background-repeat: no-repeat;
+  background-size: 80vw;
+  background-position: -15vw 15vh;
+}
+#info > div {
+  display: grid;
+  grid-template-columns: 2fr 3.5fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    '. s1'
+    '. s2'
+    '. s3'
+    '. s4'
+    '. s5';
+}
+#info section {
+  width: 100%;
+  height: 100vh;
+  padding: 4em;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-image: url('./info-background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#info div {
-  margin-top: 4em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 8em;
-  grid-template-areas:
-    's1 s3'
-    's2 s3';
+  align-items: flex-start;
+  justify-content: center;
 }
 #info .s1 {
   grid-area: s1;
@@ -28,14 +36,11 @@
 #info .s3 {
   grid-area: s3;
 }
-#info section {
-  margin-bottom: 6em;
-  border-radius: 2em;
-  background: rgba(216, 216, 216, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(128, 128, 128, 0.5);
-  backdrop-filter: blur(0.25em);
-  -webkit-backdrop-filter: blur(0.25em);
-  border-radius: 2em;
+#info .s4 {
+  grid-area: s4;
+}
+#info .s5 {
+  grid-area: s5;
 }
 #info section h3 {
   margin-bottom: 0.5em;
@@ -43,26 +48,32 @@
   font-size: 1.75em;
   font-weight: 600;
 }
-#info .s1,
-#info .s2 {
-  padding: 4em;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-#info .s1 ul,
-#info .s2 ul {
+#info section ul {
   display: flex;
   flex-direction: column;
   list-style: none;
 }
-#info .s1 li,
-#info .s2 li,
-#info .s3 p {
+#info section li {
+  margin: 1em 1.25em;
+  padding: 1em 1.5em;
+  color: var(--blue);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+#info section li {
+  border-radius: 2em;
+}
+#info section li:nth-of-type(1),
+#info section li:nth-of-type(3) {
+  background-color: var(--dark-blue);
+}
+#info section li:nth-of-type(2) {
+  background-color: var(--light-blue);
+}
+#info section p {
   margin: 0.5em 0.75em;
   padding: 0.5em 0.75em;
   color: var(--black);
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 500;
 }

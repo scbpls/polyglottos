@@ -1,0 +1,90 @@
+#shop {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+#shop h1 {
+  width: 100%;
+  text-align: center;
+  color: var(--black);
+  font-size: 2em;
+  font-weight: 700;
+}
+#shop > div {
+  margin-top: 2em;
+  width: 100%;
+  padding: 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6em;
+}
+#shop section {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 2em;
+}
+#shop .s1 {
+  grid-area: s1;
+  background-color: var(--light-blue);
+}
+#shop .s2 {
+  grid-area: s2;
+  background-color: var(--dark-blue);
+}
+#shop .s3 {
+  grid-area: s3;
+  background-color: var(--light-blue);
+}
+#shop section h3 {
+  margin-bottom: 0.5em;
+  color: var(--blue);
+  font-size: 1.75em;
+  font-weight: 600;
+}
+#shop section p {
+  margin-bottom: 0.5em;
+  color: var(--blue);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+#shop section div {
+  margin-top: 0.5em;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+#shop section h4 {
+  color: var(--blue);
+  font-size: 2em;
+  font-weight: 600;
+}
+#shop section span {
+  color: var(--blue);
+  font-size: 1em;
+  font-weight: 500;
+}
+#shop section button {
+  margin-top: 2.5em;
+  align-self: flex-end;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: opacity 300ms ease;
+}
+#shop section button:hover,
+#shop section button:focus {
+  opacity: 0.75;
+}
+#shop section ion-icon {
+  font-size: 2.75em;
+  color: var(--blue);
+}

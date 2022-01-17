@@ -9,14 +9,6 @@ const Contact = () => {
     description: '',
   });
 
-  // const user = localStorage.getItem('user')
-  //   ? JSON.parse(localStorage.getItem('user'))
-  //   : undefined;
-
-  // if (user) {
-  //   setQuestion.email(user.email);
-  // }
-
   function onSubmit(event) {
     event.preventDefault();
     localStorage.setItem('question', JSON.stringify(question));

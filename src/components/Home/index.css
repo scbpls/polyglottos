@@ -10,3 +10,17 @@
   background-size: cover;
   background-position-y: 40%;
 }
+#home > div {
+  margin-bottom: 8em;
+}
+#home h1 {
+  color: var(--black);
+  font-size: 2em;
+  font-weight: 700;
+}
+#home h4 {
+  float: right;
+  color: var(--black);
+  font-size: 1.25em;
+  font-weight: 600;
+}
