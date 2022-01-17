@@ -8,15 +8,16 @@ export const quotes = [
     author: 'Tomáš Masaryk',
   },
   {
-    title: 'a',
-    author: '1',
+    title: 'With languages, you are at home anywhere',
+    author: 'Edward De Waal',
   },
   {
-    title: 'b',
-    author: '2',
+    title:
+      'I speak Spanish to God, Italian to women, French to men, and German to my horse',
+    author: 'Charles V',
   },
   {
-    title: 'c',
-    author: '3',
+    title: 'A different language is a different vision of life',
+    author: 'Federico Fellini',
   },
 ];
