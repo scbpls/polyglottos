@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--light-blue);
 }
 #basket > div {
   min-width: 30%;
@@ -13,9 +14,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: var(--light-white);
+  background-color: var(--white);
   border-radius: 2em;
-  box-shadow: 1em 1em 2.5em var(--grey), -1em -1em 2.5em var(--white);
+  box-shadow: 1em 1em 2.5em var(--blue), -1em -1em 2.5em var(--dark-blue);
 }
 #basket h2 {
   width: 100%;
@@ -27,13 +28,43 @@
 #basket section {
   width: 100%;
 }
-#basket section div {
+#basket section > div {
   width: 100%;
-  margin-bottom: 1em;
+  margin-top: 0.5em;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+#basket section > div div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+#basket section div button {
+  padding: 0.25em;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+#basket section div button:hover,
+#basket section div button:focus {
+  opacity: 0.75;
+}
+#basket section div button:active {
+  transform: scale(0.75);
+}
+#basket section div ion-icon {
+  font-size: 2.5em;
+  color: var(--black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 #basket section h4 {
   color: var(--black);
@@ -46,17 +77,9 @@
   font-weight: 700;
   white-space: nowrap;
 }
-#basket > div > p {
+#basket div > div:last-child {
   width: 100%;
-  margin-bottom: 1.5em;
-  color: var(--black);
-  font-size: 1.55em;
-  font-weight: 700;
-  text-align: center;
-}
-#basket div > div {
-  width: 100%;
-  margin-top: 1.5em;
+  margin-top: 2.5em;
   display: flex;
   flex-direction: row;
   align-items: center;

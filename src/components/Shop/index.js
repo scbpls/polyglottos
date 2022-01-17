@@ -28,9 +28,12 @@ const Shop = () => {
               <h4>$4,79</h4>
               <span>$4,79 per month</span>
             </div>
-            <button onClick={() => add('offer1')}>
-              <ion-icon name="add-outline"></ion-icon>
-            </button>
+            <div>
+              <p>Add to cart</p>
+              <button onClick={() => add('offer1')}>
+                <ion-icon name="add-outline"></ion-icon>
+              </button>
+            </div>
           </section>
           <section className="s2">
             <h3>Amateur</h3>
@@ -39,9 +42,12 @@ const Shop = () => {
               <h4>$11,79</h4>
               <span>$3,93 per month</span>
             </div>
-            <button onClick={() => add('offer2')}>
-              <ion-icon name="add-outline"></ion-icon>
-            </button>
+            <div>
+              <p>Add to cart</p>
+              <button onClick={() => add('offer2')}>
+                <ion-icon name="add-outline"></ion-icon>
+              </button>
+            </div>
           </section>
           <section className="s3">
             <h3>Proffesional</h3>
@@ -50,9 +56,12 @@ const Shop = () => {
               <h4>$40,79</h4>
               <span>$3,40 per month</span>
             </div>
-            <button onClick={() => add('offer3')}>
-              <ion-icon name="add-outline"></ion-icon>
-            </button>
+            <div>
+              <p>Add to cart</p>
+              <button onClick={() => add('offer3')}>
+                <ion-icon name="add-outline"></ion-icon>
+              </button>
+            </div>
           </section>
         </div>
       </main>
