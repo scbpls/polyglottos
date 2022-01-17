@@ -10,17 +10,17 @@ const Info = () => {
           <section className="s s1">
             <h3>Ideal for</h3>
             <ul>
-              <li>students</li>
-              <li>people working a lot</li>
-              <li>travellers</li>
+              <li>Students</li>
+              <li>People working a lot</li>
+              <li>Travellers</li>
             </ul>
           </section>
           <section className="s2">
             <h3>Our innovations</h3>
             <ul>
-              <li>isten-and-repeat playlists – perfect during commuting</li>
+              <li>Listen-and-repeat playlists – perfect during commuting</li>
               <li>RepeateTillYouSucceed&reg; wordlists</li>
-              <li>recordings only from native speakers</li>
+              <li>Recordings only from native speakers</li>
             </ul>
           </section>
           <section className="s3">
