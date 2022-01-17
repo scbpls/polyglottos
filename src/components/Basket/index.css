@@ -46,6 +46,14 @@
   font-weight: 700;
   white-space: nowrap;
 }
+#basket > div > p {
+  width: 100%;
+  margin-bottom: 1.5em;
+  color: var(--black);
+  font-size: 1.55em;
+  font-weight: 700;
+  text-align: center;
+}
 #basket div > div {
   width: 100%;
   margin-top: 1.5em;
