@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import Info from './components/Info';
 import Shop from './components/Shop';
-import Basket from './components/Basket';
+import Cart from './components/Cart';
 import Contact from './components/Contact';
 import Login from './components/Login';
 import UserPanel from './components/UserPanel';
@@ -21,7 +21,7 @@ function App() {
           <Route index element={<Home {...quotes} />} />
           <Route path="info" element={<Info />} />
           <Route path="shop" element={<Shop />} />
-          <Route path="basket" element={<Basket />} />
+          <Route path="cart" element={<Cart />} />
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login {...users} />} />
           <Route path="user-panel" element={<UserPanel />} />

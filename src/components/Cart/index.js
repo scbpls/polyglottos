@@ -2,56 +2,56 @@ import React, { useState, useEffect } from 'react';
 import '../../index.css';
 import './index.css';
 
-const Basket = () => {
-  const basket_tmp = localStorage.getItem('basket')
-    ? JSON.parse(localStorage.getItem('basket'))
+const Cart = () => {
+  const cart_tmp = localStorage.getItem('cart')
+    ? JSON.parse(localStorage.getItem('cart'))
     : { offer1: 0, offer2: 0, offer3: 0 };
 
-  const [basket, setBasket] = useState(basket_tmp);
+  const [cart, setcart] = useState(cart_tmp);
 
   function remove(event) {
-    setBasket((previousData) => ({
+    setcart((previousData) => ({
       ...previousData,
       [event]: 0,
     }));
   }
 
   function substract(event) {
-    setBasket((previousData) => ({
+    setcart((previousData) => ({
       ...previousData,
-      [event]: basket[event]--,
+      [event]: cart[event]--,
     }));
   }
 
   function add(event) {
-    setBasket((previousData) => ({
+    setcart((previousData) => ({
       ...previousData,
-      [event]: basket[event]++,
+      [event]: cart[event]++,
     }));
   }
 
   function sum() {
     return (
-      basket.offer1 * 4.79 +
-      basket.offer2 * 11.79 +
-      basket.offer3 * 40.79
+      cart.offer1 * 4.79 +
+      cart.offer2 * 11.79 +
+      cart.offer3 * 40.79
     ).toFixed(2);
   }
 
   useEffect(() => {
-    localStorage.setItem('basket', JSON.stringify(basket));
-  }, [basket]);
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
 
   return (
     <>
-      <main id="basket">
+      <main id="cart">
         <div>
-          <h2>Basket</h2>
-          {basket.offer1 === 0 && basket.offer2 === 0 && basket.offer3 === 0 ? (
+          <h2>Cart</h2>
+          {cart.offer1 === 0 && cart.offer2 === 0 && cart.offer3 === 0 ? (
             <h3>Empty</h3>
           ) : (
             <section>
-              {basket.offer1 !== 0 ? (
+              {cart.offer1 !== 0 ? (
                 <div>
                   <div className="d1">
                     <button onClick={() => remove('offer1')}>
@@ -64,14 +64,14 @@ const Basket = () => {
                     <button onClick={() => substract('offer1')}>
                       <ion-icon name="remove-outline"></ion-icon>
                     </button>
-                    <p>{basket.offer1}</p>
+                    <p>{cart.offer1}</p>
                     <button onClick={() => add('offer1')}>
                       <ion-icon name="add-outline"></ion-icon>
                     </button>
                   </div>
                 </div>
               ) : undefined}
-              {basket.offer2 !== 0 ? (
+              {cart.offer2 !== 0 ? (
                 <div>
                   <div className="d1">
                     <button onClick={() => remove('offer2')}>
@@ -84,14 +84,14 @@ const Basket = () => {
                     <button onClick={() => substract('offer2')}>
                       <ion-icon name="remove-outline"></ion-icon>
                     </button>
-                    <p>{basket.offer2}</p>
+                    <p>{cart.offer2}</p>
                     <button onClick={() => add('offer2')}>
                       <ion-icon name="add-outline"></ion-icon>
                     </button>
                   </div>
                 </div>
               ) : undefined}
-              {basket.offer3 !== 0 ? (
+              {cart.offer3 !== 0 ? (
                 <div>
                   <div className="d1">
                     <button onClick={() => remove('offer3')}>
@@ -104,7 +104,7 @@ const Basket = () => {
                     <button onClick={() => substract('offer3')}>
                       <ion-icon name="remove-outline"></ion-icon>
                     </button>
-                    <p>{basket.offer3}</p>
+                    <p>{cart.offer3}</p>
                     <button onClick={() => add('offer3')}>
                       <ion-icon name="add-outline"></ion-icon>
                     </button>
@@ -113,7 +113,6 @@ const Basket = () => {
               ) : undefined}
             </section>
           )}
-
           <div>
             <h3>Total:</h3>
             <p>${sum()}</p>
@@ -124,4 +123,4 @@ const Basket = () => {
   );
 };
 
-export default Basket;
+export default Cart;

@@ -3,22 +3,22 @@ import '../../index.css';
 import './index.css';
 
 const Shop = () => {
-  const basket_tmp = localStorage.getItem('basket')
-    ? JSON.parse(localStorage.getItem('basket'))
+  const cart_tmp = localStorage.getItem('cart')
+    ? JSON.parse(localStorage.getItem('cart'))
     : { offer1: 0, offer2: 0, offer3: 0 };
 
-  const [basket, setBasket] = useState(basket_tmp);
+  const [cart, setcart] = useState(cart_tmp);
 
   function add(event) {
-    setBasket((previousData) => ({
+    setcart((previousData) => ({
       ...previousData,
-      [event]: basket[event]++,
+      [event]: cart[event]++,
     }));
   }
 
   useEffect(() => {
-    localStorage.setItem('basket', JSON.stringify(basket));
-  }, [basket]);
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
 
   return (
     <>

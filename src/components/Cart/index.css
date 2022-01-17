@@ -1,4 +1,4 @@
-#basket {
+#cart {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: center;
   background-color: var(--light-blue);
 }
-#basket > div {
+#cart > div {
   min-width: 30%;
   padding: 4em;
   display: flex;
@@ -18,14 +18,14 @@
   border-radius: 2em;
   box-shadow: 1em 1em 2.5em var(--blue), -1em -1em 2.5em var(--dark-blue);
 }
-#basket h2 {
+#cart h2 {
   width: 100%;
   margin-bottom: 2em;
   color: var(--black);
   font-size: 1.75em;
   font-weight: 700;
 }
-#basket > div > h3 {
+#cart > div > h3 {
   width: 100%;
   margin-bottom: 1.25em;
   text-align: center;
@@ -33,10 +33,10 @@
   font-size: 1.5em;
   font-weight: 600;
 }
-#basket section {
+#cart section {
   width: 100%;
 }
-#basket section > div {
+#cart section > div {
   width: 100%;
   margin-top: 1.5em;
   display: flex;
@@ -44,14 +44,14 @@
   align-items: center;
   justify-content: space-between;
 }
-#basket section .d1 {
+#cart section .d1 {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-#basket section .d1 button {
+#cart section .d1 button {
   padding: 0.25em;
   border: none;
   border-radius: 50%;
@@ -59,14 +59,14 @@
   cursor: pointer;
   transition: all 300ms ease;
 }
-#basket section .d1 button:hover,
-#basket section .d1 button:focus {
+#cart section .d1 button:hover,
+#cart section .d1 button:focus {
   opacity: 0.75;
 }
-#basket section .d1 button:active {
+#cart section .d1 button:active {
   transform: scale(0.75);
 }
-#basket section .d1 ion-icon {
+#cart section .d1 ion-icon {
   font-size: 2.5em;
   color: var(--black);
   display: flex;
@@ -74,35 +74,35 @@
   align-items: center;
   justify-content: center;
 }
-#basket section .d1 h4 {
+#cart section .d1 h4 {
   color: var(--black);
   font-size: 1.25em;
   font-weight: 600;
 }
-#basket section .d2 {
+#cart section .d2 {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
 }
-#basket section .d2 p {
+#cart section .d2 p {
   color: var(--black);
   font-size: 1.25em;
   font-weight: 700;
 }
-#basket section .d2 button {
+#cart section .d2 button {
   padding: 0.25em;
   border: none;
   background-color: transparent;
   cursor: pointer;
   transition: all 300ms ease;
 }
-#basket section .d2 button:hover,
-#basket section .d2 button:focus {
+#cart section .d2 button:hover,
+#cart section .d2 button:focus {
   opacity: 0.75;
 }
-#basket section .d2 button ion-icon {
+#cart section .d2 button ion-icon {
   color: var(--black);
   font-size: 1.5em;
   display: flex;
@@ -110,7 +110,7 @@
   align-items: center;
   justify-content: center;
 }
-#basket > div > div:last-child {
+#cart > div > div:last-child {
   width: 100%;
   margin-top: 2.5em;
   display: flex;
@@ -118,13 +118,13 @@
   align-items: center;
   justify-content: flex-end;
 }
-#basket div > div h3 {
+#cart div > div h3 {
   margin-right: 0.5em;
   color: var(--black);
   font-size: 1.25em;
   font-weight: 700;
 }
-#basket div > div p {
+#cart div > div p {
   color: var(--black);
   font-size: 1.5em;
   font-weight: 700;
