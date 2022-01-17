@@ -13,7 +13,7 @@ const Login = (users) => {
     });
     if (result && result.password === user.password) {
       localStorage.setItem('user', JSON.stringify(user));
-      window.location.reload();
+      window.location = '/';
     } else {
       alert('Invalid data');
     }

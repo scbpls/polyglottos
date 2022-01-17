@@ -14,7 +14,7 @@ const Register = () => {
     event.preventDefault();
     localStorage.setItem('user', JSON.stringify(user));
     alert('User has been regisered');
-    window.location.reload();
+    window.location = '/';
   }
 
   function handleChange(event) {
