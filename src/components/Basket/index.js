@@ -47,41 +47,73 @@ const Basket = () => {
       <main id="basket">
         <div>
           <h2>Basket</h2>
-          <section>
-            {basket.offer1 !== 0 ? (
-              <div>
+          {basket.offer1 === 0 && basket.offer2 === 0 && basket.offer3 === 0 ? (
+            <h3>Empty</h3>
+          ) : (
+            <section>
+              {basket.offer1 !== 0 ? (
                 <div>
-                  <button onClick={() => remove('offer1')}>
-                    <ion-icon name="close-outline"></ion-icon>
-                  </button>
-                  <h4>Starter:</h4>
+                  <div className="d1">
+                    <button onClick={() => remove('offer1')}>
+                      <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                    <h4>Starter:</h4>
+                  </div>
+                  <div className="d2">
+                    <p>$4,79</p>
+                    <button onClick={() => substract('offer1')}>
+                      <ion-icon name="remove-outline"></ion-icon>
+                    </button>
+                    <p>{basket.offer1}</p>
+                    <button onClick={() => add('offer1')}>
+                      <ion-icon name="add-outline"></ion-icon>
+                    </button>
+                  </div>
                 </div>
-                <p>{basket.offer1}x $4,79</p>
-              </div>
-            ) : undefined}
-            {basket.offer2 !== 0 ? (
-              <div>
+              ) : undefined}
+              {basket.offer2 !== 0 ? (
                 <div>
-                  <button onClick={() => remove('offer2')}>
-                    <ion-icon name="close-outline"></ion-icon>
-                  </button>
-                  <h4>Amateur:</h4>
+                  <div className="d1">
+                    <button onClick={() => remove('offer2')}>
+                      <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                    <h4>Amateur:</h4>
+                  </div>
+                  <div className="d2">
+                    <p>$11,79</p>
+                    <button onClick={() => substract('offer2')}>
+                      <ion-icon name="remove-outline"></ion-icon>
+                    </button>
+                    <p>{basket.offer2}</p>
+                    <button onClick={() => add('offer2')}>
+                      <ion-icon name="add-outline"></ion-icon>
+                    </button>
+                  </div>
                 </div>
-                <p>{basket.offer2}x $11,79</p>
-              </div>
-            ) : undefined}
-            {basket.offer3 !== 0 ? (
-              <div>
+              ) : undefined}
+              {basket.offer3 !== 0 ? (
                 <div>
-                  <button onClick={() => remove('offer3')}>
-                    <ion-icon name="close-outline"></ion-icon>
-                  </button>
-                  <h4>Proffesional:</h4>
+                  <div className="d1">
+                    <button onClick={() => remove('offer3')}>
+                      <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                    <h4>Proffesional:</h4>
+                  </div>
+                  <div className="d2">
+                    <p>$40,79</p>
+                    <button onClick={() => substract('offer3')}>
+                      <ion-icon name="remove-outline"></ion-icon>
+                    </button>
+                    <p>{basket.offer3}</p>
+                    <button onClick={() => add('offer3')}>
+                      <ion-icon name="add-outline"></ion-icon>
+                    </button>
+                  </div>
                 </div>
-                <p>{basket.offer3}x $40,79</p>
-              </div>
-            ) : undefined}
-          </section>
+              ) : undefined}
+            </section>
+          )}
+
           <div>
             <h3>Total:</h3>
             <p>${sum()}</p>

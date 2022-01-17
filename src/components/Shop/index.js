@@ -3,7 +3,11 @@ import '../../index.css';
 import './index.css';
 
 const Shop = () => {
-  const [basket, setBasket] = useState({ offer1: 0, offer2: 0, offer3: 0 });
+  const basket_tmp = localStorage.getItem('basket')
+    ? JSON.parse(localStorage.getItem('basket'))
+    : { offer1: 0, offer2: 0, offer3: 0 };
+
+  const [basket, setBasket] = useState(basket_tmp);
 
   function add(event) {
     setBasket((previousData) => ({

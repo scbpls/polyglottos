@@ -25,25 +25,33 @@
   font-size: 1.75em;
   font-weight: 700;
 }
+#basket > div > h3 {
+  width: 100%;
+  margin-bottom: 1.25em;
+  text-align: center;
+  color: var(--black);
+  font-size: 1.5em;
+  font-weight: 600;
+}
 #basket section {
   width: 100%;
 }
 #basket section > div {
   width: 100%;
-  margin-top: 0.5em;
+  margin-top: 1.5em;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-#basket section > div div {
+#basket section .d1 {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-#basket section div button {
+#basket section .d1 button {
   padding: 0.25em;
   border: none;
   border-radius: 50%;
@@ -51,14 +59,14 @@
   cursor: pointer;
   transition: all 300ms ease;
 }
-#basket section div button:hover,
-#basket section div button:focus {
+#basket section .d1 button:hover,
+#basket section .d1 button:focus {
   opacity: 0.75;
 }
-#basket section div button:active {
+#basket section .d1 button:active {
   transform: scale(0.75);
 }
-#basket section div ion-icon {
+#basket section .d1 ion-icon {
   font-size: 2.5em;
   color: var(--black);
   display: flex;
@@ -66,18 +74,43 @@
   align-items: center;
   justify-content: center;
 }
-#basket section h4 {
+#basket section .d1 h4 {
   color: var(--black);
   font-size: 1.25em;
   font-weight: 600;
 }
-#basket section div p {
+#basket section .d2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+#basket section .d2 p {
   color: var(--black);
   font-size: 1.25em;
   font-weight: 700;
-  white-space: nowrap;
 }
-#basket div > div:last-child {
+#basket section .d2 button {
+  padding: 0.25em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+#basket section .d2 button:hover,
+#basket section .d2 button:focus {
+  opacity: 0.75;
+}
+#basket section .d2 button ion-icon {
+  color: var(--black);
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#basket > div > div:last-child {
   width: 100%;
   margin-top: 2.5em;
   display: flex;
