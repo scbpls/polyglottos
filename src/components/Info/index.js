@@ -50,7 +50,7 @@ const Info = () => {
             <p>
               For only $4,79 a month, $12,69 a quarter or $49,79 a year you get
               access to our exciting exclusive content – seasonal and specialized vocabulary.
-              Want to go into economics or become a fitness guru? With PolyglottosPlus everything is possible.
+              Want to go into economics or become&nbsp;a fitness guru? With PolyglottosPlus everything is possible.
               <br />
               PolyglottosPlus is also ad-free.
             </p>
