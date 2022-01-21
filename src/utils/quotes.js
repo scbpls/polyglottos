@@ -1,5 +1,9 @@
 export const quotes = [
   {
+    title: 'chuj pizda dupa cyce',
+    author: 'mgr inż. Dominik Strugała',
+  },
+  {
     title: 'The limits of my language are the limits of my world',
     author: 'Ludwig Wittgenstein',
   },
