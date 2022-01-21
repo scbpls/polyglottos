@@ -8,7 +8,7 @@ const Info = () => {
       <main id="info">
         <div>
           <section className="s s1">
-            <h3>Ideal for</h3>
+            <h3>Ideal for:</h3>
             <ul>
               <li>Students</li>
               <li>People working a lot</li>
@@ -31,6 +31,8 @@ const Info = () => {
               Repeat while driving a car or sitting in a public transport.
               <br />
               Our native speakers will let you learn perfect pronunciation.
+              <br/>
+              Just put your headphones on and relax.
             </p>
           </section>
           <section className="s4">
@@ -40,7 +42,7 @@ const Info = () => {
               <br />
               At first you see a word list with your native language only. You
               check your learned-language version and then you mark how well you
-              know it.
+              know it. The better you know it, the later you'll repeat it.
             </p>
           </section>
           <section className="s5">
