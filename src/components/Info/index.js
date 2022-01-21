@@ -47,7 +47,9 @@ const Info = () => {
             <h3>PolyglottosPlus</h3>
             <p>
               For only $4,79 a month, $12,69 a quarter or $49,79 a year you get
-              access to our exciting exclusive content – seasonal vocabulary.
+              access to our exciting exclusive content – seasonal and specialized vocabulary. 
+              <br/>
+              Want to go into economics or become a fitness guru? With PolyglottosPlus everything is possible.
               <br />
               PolyglottosPlus is also ad-free.
             </p>
