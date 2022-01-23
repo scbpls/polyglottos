@@ -3,11 +3,14 @@ import '../../index.css';
 import './index.css';
 
 const Cart = () => {
-  const cart_tmp = localStorage.getItem('cart')
-    ? JSON.parse(localStorage.getItem('cart'))
-    : { offer1: 0, offer2: 0, offer3: 0 };
+  if (!localStorage.getItem('cart')) {
+    localStorage.setItem(
+      'cart',
+      JSON.stringify({ offer1: 0, offer2: 0, offer3: 0 })
+    );
+  }
 
-  const [cart, setcart] = useState(cart_tmp);
+  const [cart, setcart] = useState(JSON.parse(localStorage.getItem('cart')));
 
   function remove(event) {
     setcart((previousData) => ({
