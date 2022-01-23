@@ -7,10 +7,10 @@ const Shop = () => {
     ? JSON.parse(localStorage.getItem('cart'))
     : { offer1: 0, offer2: 0, offer3: 0 };
 
-  const [cart, setcart] = useState(cart_tmp);
+  var [cart, setCart] = useState(cart_tmp);
 
   function add(event) {
-    setcart((previousData) => ({
+    setCart((previousData) => ({
       ...previousData,
       [event]: cart[event]++,
     }));
@@ -18,6 +18,7 @@ const Shop = () => {
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
+    console.table(cart);
   }, [cart]);
 
   return (
